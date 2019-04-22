@@ -1,1 +1,1 @@
-# Open-Weather-Map-API-Project WPI Project using OpenWeatherMap's API
+# Project using OpenWeatherMap's API (WIP)
