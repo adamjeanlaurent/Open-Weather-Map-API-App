@@ -1,5 +1,5 @@
 // returns the date from unix time stamp to May-5-2019 18:16:55 format
-let convertUnixToDate = function(unixtimestamp){
+exports.convertUnixToDate = function(unixtimestamp){
     // Months array
     let months_arr = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
     // Convert timestamp to milliseconds
@@ -22,10 +22,29 @@ let convertUnixToDate = function(unixtimestamp){
    }
 
 //returns the date in 5 May format
-let getMonthFromUnix = function(unixtimestamp){
-  let months_arr = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-   let date = new Date(unixtimestamp*1000);
-  let month = months_arr[date.getMonth()];
-  let day = date.getDate();
+exports.getMonthFromUnix = function(unixtimestamp){
+    let months_arr = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    let date = new Date(unixtimestamp*1000);
+    let month = months_arr[date.getMonth()];
+    let day = date.getDate();
   return day + " " + month;
+  }
+
+//returns the time in AM/PM Format in EST
+  exports.timeFromUnix = function(unixtimestamp){
+    let date = new Date(unixtimestamp*1000);
+    let hours = date.getHours();
+    let minutes = date.getMinutes();
+    if(minutes < 10){
+      minutes = "0" + minutes; 
+    }
+    if(hours > 12){
+      return hours - 12 + ":" + minutes + " PM";
+    }
+    else if (hours === 12){
+      return hours + ":" + minutes + " PM";
+    }
+    else if (hours < 12){
+      return hours + ":" + minutes + " AM";
+    }
   }
