@@ -7,6 +7,7 @@ const app = express();
 const apiKey = "f06d69d89a74e576af8825f26319c6c8";
 
 app.use(bodyParser.urlencoded({extended: true}));
+app.use(express.static("public"));
 app.set("view engine", "ejs");      
 
 app.get("/", function(req,res){
@@ -42,5 +43,8 @@ app.listen(port,function(){
 //api key  for youtube api AIzaSyDrleh-H310BeSbiMZ5lem4L_o3XZ4LYHI
 
 
-//https://api.openweathermap.org/data/2.5/forecast?zip=02919&appid=f06d69d89a74e576af8825f26319c6c8
+//https://api.openweathermap.org/data/2.5/forecast?zip=02919,us&appid=f06d69d89a74e576af8825f26319c6c8
 //forecast api call
+
+
+//UTC is 4 hours later than EST
