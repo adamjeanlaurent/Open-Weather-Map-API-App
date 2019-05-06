@@ -7,6 +7,7 @@ const app = express();
 const apiKey = "f06d69d89a74e576af8825f26319c6c8";
 const port = 3000;
 
+// Arrays For The Temperatures Of The Next 3 Days
 let firstDayTemps = [];
 let secondDayTemps = [];
 let thirdDayTemps = [];

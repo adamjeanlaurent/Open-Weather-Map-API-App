@@ -3,14 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Weather App</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <form action="/" method="POST">
-        <input type="text" name="zipcode" placeholder="zipcode">
-        <button type = submit>Find Your Current Weather</button>
-    </form>
+    <h1 id = "title">Find Your Weather!</h1>
+    <div id = "icon-box">
+        <i class="fas fa-bolt fa-5x"></i>
+        <i class="fas fa-cloud fa-5x"></i>    
+        <i class="fas fa-sun fa-5x"></i>
+        <i class="far fa-snowflake fa-5x"></i>
+    </div>
+
+    <div class="card login-card">
+            <div class="card-body">
+              <h5 class="card-title">Enter A US ZipCode To See Your Four Day Forecast</h5>
+              <form action="/" method="POST">
+                <input  id = "text-box"type="text" name="zipcode" placeholder="zipcode" autocomplete="off">
+                <button type="submit" class="btn btn-success submit-btn btn-lg ">Success</button>
+            </form>
+            </div>
+        </div>
     
 </body>
-<script src="formpage.js"></script>
 </html>

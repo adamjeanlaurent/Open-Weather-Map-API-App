@@ -1,0 +1,42 @@
+body{
+    background-color: #E4E9FD;
+    background-image: -webkit-linear-gradient(65deg, #dbe9b7 50%, #76a21e 50%);
+    min-height: 1000px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#title{
+    text-align: center;
+    color: #dbe9b7;
+    font-size: 60px;
+}
+
+.login-card{
+    width: 18rem;
+    border-radius: 25px;
+    text-align: center;
+    height: 14rem;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+
+.submit-btn{
+    margin-top: 20px;
+}
+
+#icon-box{
+    margin: 0 auto;
+    width: 350px;
+    height: 100px;
+    text-align: center;  
+}
+
+#text-box{
+    text-align: center;
+    margin-top: 15px;
+}
