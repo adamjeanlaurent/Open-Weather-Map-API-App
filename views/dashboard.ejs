@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="icon" href="imgs/cloud.png">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:700i" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -16,7 +17,7 @@
                 <div class="card-header"> Today: <%= currentDate %></div>
                 <div class="card-body">
                     <p class="card-text maintemp"> <%= currentDesc %></p>
-                    <p class="card-text maintemp">It Is Currently <%= currentTemp %>°F</p>
+                    <p class="card-text maintemp">It Is Currently <span class = "curTempNum"><%= currentTemp %>°F</span></p>
             </div>
             </div>
         </div>

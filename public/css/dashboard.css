@@ -37,4 +37,9 @@ body{
 
 .tempNum{
     font-family: 'Roboto', sans-serif;
+    margin-left: 30px;
+}
+
+.curTempNum{
+    font-family: 'Roboto', sans-serif;
 }
