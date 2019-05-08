@@ -1,0 +1,35 @@
+body{
+    background-color: #E4E9FD;
+    background-image: -webkit-linear-gradient(65deg, #dbe9b7 50%, #76a21e 50%);
+    min-height: 1000px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#title{
+    text-align: center;
+    color: #dbe9b7;
+    font-size: 60px;
+}
+
+.today-temp{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.card-header{
+    text-align: center;
+}
+
+.maintemp{
+    font-size: 25px;
+    text-align: center;
+}
+
+.subtemp{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.subtemprow{
+    margin-top: 30px;
+}

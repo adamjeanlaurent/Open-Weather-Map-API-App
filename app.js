@@ -17,13 +17,14 @@ app.use(express.static("public"));
 app.set("view engine", "ejs");      
 
 app.get("/", function(req,res){
-    res.sendFile(__dirname + "/index.html");
+    // res.sendFile(__dirname + "/index.html");
+    res.render("index", {wrongZip: false});
 });
 
 app.post("/",function(req,res){     
     let zipCode = zipCodes.lookup(req.body.zipcode);
         if(zipCode === undefined){
-            return res.redirect("/");
+            return res.render("index", {wrongZip: true});
     }
     let options = {
         url: `https://api.openweathermap.org/data/2.5/forecast?zip=${req.body.zipcode},us&units=Imperial&appid=` + apiKey,
@@ -74,14 +75,15 @@ app.post("/",function(req,res){
                 currentDate: currentDate,
                 firstDayDate: firstDayDate,
                 secondDayDate: secondDayDate,
-                thirdDayDate: thirdDayDate
+                thirdDayDate: thirdDayDate,
+                cityName: data.city.name
             });
         }
 
     });
 });
 
-app.listen(port,function(){
+app.listen(port,function(){ 
     console.log("Server Running On Port " + port);
 });
 

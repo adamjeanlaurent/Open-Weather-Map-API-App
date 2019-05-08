@@ -9,6 +9,12 @@ body{
     text-align: center;
     color: #dbe9b7;
     font-size: 60px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.fas{
+    margin-left: 20px;
 }
 
 .login-card{
@@ -24,14 +30,13 @@ body{
     left: 0;
 }
 
-
 .submit-btn{
     margin-top: 20px;
 }
 
 #icon-box{
     margin: 0 auto;
-    width: 350px;
+    width: 400px;
     height: 100px;
     text-align: center;  
 }

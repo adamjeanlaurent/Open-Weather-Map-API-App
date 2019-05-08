@@ -6,23 +6,26 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/indexStyles.css">
 </head>
 <body>
-    <h1 id = "title">Find Your Weather!</h1>
+    <h1 id = "title">See Your Weather Forecast!</h1>
     <div id = "icon-box">
         <i class="fas fa-bolt fa-5x"></i>
         <i class="fas fa-cloud fa-5x"></i>    
         <i class="fas fa-sun fa-5x"></i>
-        <i class="far fa-snowflake fa-5x"></i>
+        <i class="fas fa-snowflake fa-5x"></i>
     </div>
 
     <div class="card login-card">
             <div class="card-body">
-              <h5 class="card-title">Enter A US ZipCode To See Your Four Day Forecast</h5>
+                <% if(wrongZip) { %>
+                    <span style = "color:red">Invalid Zip Code</span>
+                    <% } %>
+              <h5 class="card-title">Enter A US ZipCode</h5>
               <form action="/" method="POST">
                 <input  id = "text-box"type="text" name="zipcode" placeholder="zipcode" autocomplete="off">
-                <button type="submit" class="btn btn-success submit-btn btn-lg ">Success</button>
+                <button type="submit" class="btn btn-success submit-btn btn-lg ">See Forecast</button>
             </form>
             </div>
         </div>
