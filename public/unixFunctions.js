@@ -13,13 +13,13 @@ exports.convertUnixToMMDDYYYY = function(unixTimeStamp){
     return convertTime;
    }
 
-//returns the date in 5 May format
+//returns the date in may 5 format
 exports.convertUnixToDayMonth = function(unixTimeStamp){
     let months_arr = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
     let date = new Date(unixTimeStamp*1000);
     let month = months_arr[date.getMonth()];
     let day = date.getDate();
-  return day + " " + month;
+  return month + " " + day;
   }
 
 //returns the time in AM/PM Format in EST
