@@ -73,6 +73,7 @@ app.post("/",function(req,res){
                 thirdDayTemps: thirdDayTemps,
                 currentTemp: data.list[0].main.temp,
                 currentDate: currentDate,
+                currentDesc: data.list[0].weather[0].description,
                 firstDayDate: firstDayDate,
                 secondDayDate: secondDayDate,
                 thirdDayDate: thirdDayDate,

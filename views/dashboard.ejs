@@ -10,19 +10,19 @@
 <body>
     <h1 id = "title">Weather In <%= cityName %></h1>
     <div class = "row">
-        <div class = "col-lg-12 ">
+        <div class = "col-lg-12">
             <div class="card bg-light mb-3 today-temp">
-                <div class="card-header">Date</div>
+                <div class="card-header"> Today: <%= currentDate %></div>
                 <div class="card-body">
-                    <p class="card-text maintemp">Description</p>
-                    <p class="card-text maintemp">It Is Currently Number Degres</p>
+                    <p class="card-text maintemp"> <%= currentDesc %></p>
+                    <p class="card-text maintemp">It Is Currently <%= currentTemp %> Degrees</p>
             </div>
             </div>
         </div>
     </div>
 
     <div class = "row subtemprow">
-    <div class = "col-4 ">
+    <div class = "col-lg-4">
             <div class="card bg-light mb-3 subtemp" style="max-width: 18rem;">
                 <div class="card-header"><%= firstDayDate %></div>
                 <div class="card-body">
@@ -37,33 +37,33 @@
                 </div>
                 </div>
         </div>
-        <div class = "col-4 ">
+        <div class = "col-lg-4 ">
             <div class="card bg-light mb-3 subtemp" style="max-width: 18rem;">
-                <div class="card-header"><%= firstDayDate %></div>
+                <div class="card-header"><%= secondDayDate %></div>
                 <div class="card-body">
-                    <p class="card-text">2:00 AM: <%= firstDayTemps[0] %> </p>
-                    <p class="card-text">5:00 AM: <%= firstDayTemps[1] %></p>
-                    <p class="card-text">8:00 AM: <%= firstDayTemps[2] %></p>
-                    <p class="card-text">11:00 AM: <%= firstDayTemps[3] %></p>
-                    <p class="card-text">2:00 PM: <%= firstDayTemps[4] %></p>
-                    <p class="card-text">5:00 PM: <%= firstDayTemps[5] %></p>
-                    <p class="card-text">8:00 PM: <%= firstDayTemps[6] %></p>
-                    <p class="card-text">11:00 PM: <%= firstDayTemps[7] %></p>
+                    <p class="card-text">2:00 AM: <%= secondDayTemps[0] %> </p>
+                    <p class="card-text">5:00 AM: <%= secondDayTemps[1] %></p>
+                    <p class="card-text">8:00 AM: <%= secondDayTemps[2] %></p>
+                    <p class="card-text">11:00 AM: <%= secondDayTemps[3] %></p>
+                    <p class="card-text">2:00 PM: <%= secondDayTemps[4] %></p>
+                    <p class="card-text">5:00 PM: <%= secondDayTemps[5] %></p>
+                    <p class="card-text">8:00 PM: <%= secondDayTemps[6] %></p>
+                    <p class="card-text">11:00 PM: <%= secondDayTemps[7] %></p>
                 </div>
                 </div>
         </div>
-        <div class = "col-4 ">
+        <div class = "col-lg-4">
                 <div class="card bg-light mb-3 subtemp" style="max-width: 18rem;">
-                    <div class="card-header"><%= firstDayDate %></div>
+                    <div class="card-header"><%= thirdDayDate %></div>
                     <div class="card-body">
-                        <p class="card-text">2:00 AM: <%= firstDayTemps[0] %> </p>
-                        <p class="card-text">5:00 AM: <%= firstDayTemps[1] %></p>
-                        <p class="card-text">8:00 AM: <%= firstDayTemps[2] %></p>
-                        <p class="card-text">11:00 AM: <%= firstDayTemps[3] %></p>
-                        <p class="card-text">2:00 PM: <%= firstDayTemps[4] %></p>
-                        <p class="card-text">5:00 PM: <%= firstDayTemps[5] %></p>
-                        <p class="card-text">8:00 PM: <%= firstDayTemps[6] %></p>
-                        <p class="card-text">11:00 PM: <%= firstDayTemps[7] %></p>
+                        <p class="card-text">2:00 AM: <%= thirdDayTemps[0] %> </p>
+                        <p class="card-text">5:00 AM: <%= thirdDayTemps[1] %></p>
+                        <p class="card-text">8:00 AM: <%= thirdDayTemps[2] %></p>
+                        <p class="card-text">11:00 AM: <%= thirdDayTemps[3] %></p>
+                        <p class="card-text">2:00 PM: <%= thirdDayTemps[4] %></p>
+                        <p class="card-text">5:00 PM: <%= thirdDayTemps[5] %></p>
+                        <p class="card-text">8:00 PM: <%= thirdDayTemps[6] %></p>
+                        <p class="card-text">11:00 PM: <%= thirdDayTemps[7] %></p>
                     </div>
                     </div>
             </div>
