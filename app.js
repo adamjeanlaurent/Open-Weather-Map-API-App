@@ -88,10 +88,4 @@ app.listen(port,function(){
     console.log("Server Running On Port " + port);
 });
 
-//api key for weather f06d69d89a74e576af8825f26319c6c8
-
-//https://api.openweathermap.org/data/2.5/forecast?zip=02919,us&units=imperia&appid=f06d69d89a74e576af8825f26319c6c8
-//forecast api call
-
-
 
