@@ -6,6 +6,7 @@ const unixTime = require('./public/unixFunctions.js');
 const app = express();
 const apiKey = "f06d69d89a74e576af8825f26319c6c8";
 const port = 3000;
+var startIndex = 0;
 
 // Arrays For The Temperatures Of The Next 3 Days
 let firstDayTemps = [];
@@ -46,12 +47,12 @@ app.post("/",function(req,res){
                 This Loops Finds When The Day After The Current Day Starts
                 */
                 if(unixTime.convertUnixToAMPM(data.list[i].dt) === '11:00 PM'){
-                    var startIndex = i + 1;
+                    console.log('GOT HERE');
+                    startIndex = i + 1;
                     break;
                 }
             }
 
-            console.log(data.list);
             console.log(startIndex);
             // Storing The Temperatures Of The Next Three Days
             for(let i = 0; i < 8; i++){
