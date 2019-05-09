@@ -48,9 +48,10 @@ app.post("/",function(req,res){
                     break;
                 }
             }
+            console.log(data);
+            console.log(data.list[0]);
             // Storing The Temperatures Of The Next Three Days
             for(let i = 0; i < 8; i++){
-                console.log(i);
                 firstDayTemps.push(data.list[startIndex + i].main.temp);
             }
 
