@@ -42,18 +42,15 @@ app.post("/",function(req,res){
             let data = JSON.parse(body);
             console.log(data.list.length);
             for(let i = 0; i < data.list.length; i++){
-                console.log(i);
                 /* Because The API's Response Is Different Depending On The Time Of The Call, 
                 This Loops Finds When The Day After The Current Day Starts
                 */
                 if(unixTime.convertUnixToAMPM(data.list[i].dt) === '11:00 PM'){
-                    console.log('GOT HERE');
                     startIndex = i + 1;
                     break;
                 }
             }
 
-            console.log(startIndex);
             // Storing The Temperatures Of The Next Three Days
             for(let i = 0; i < 8; i++){
                 firstDayTemps.push(data.list[startIndex + i].main.temp);
