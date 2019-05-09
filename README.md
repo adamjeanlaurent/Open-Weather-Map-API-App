@@ -7,5 +7,13 @@ https://openweathermapforecast.herokuapp.com/ <-- Hosted On Heroku The Stack For
 In order to set this up on your own enviornment all you need is to install node.js, and download the dependency modules for the project.
 
 ```
-Type npm i, to download dependencies in case any of them are updated from the project node_modules folder
+Type npm i, to update any dependencies
 ```
+
+After installing node.js and updating dependencies, type, 
+
+```
+node app.js
+```
+
+This will create a web server with the app hosted on it, on your local port 3000 (or whichever one you specify)
