@@ -2,7 +2,7 @@ const express = require('express');
 const request = require('request');
 const bodyParser = require('body-parser');
 const zipCodes = require('zipcodes');
-const unixTime = require('./public/unixFunctions.js');
+const unixTime = require('./unixFunctions.js');
 const app = express();
 const apiKey = "f06d69d89a74e576af8825f26319c6c8";
 const port = 3000;
@@ -48,8 +48,6 @@ app.post("/",function(req,res){
                     break;
                 }
             }
-            console.log(data);
-            console.log(data.list[0]);
             // Storing The Temperatures Of The Next Three Days
             for(let i = 0; i < 8; i++){
                 firstDayTemps.push(data.list[startIndex + i].main.temp);
