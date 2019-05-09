@@ -84,7 +84,7 @@ app.post("/",function(req,res){
     });
 });
 
-app.listen(process.env.PORT || port,function(){ 
+app.listen(process.env.PORT,function(){ 
     console.log("Server Running On Port " + port);
 });
 
