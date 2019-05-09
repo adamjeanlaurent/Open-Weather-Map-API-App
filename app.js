@@ -39,7 +39,9 @@ app.post("/",function(req,res){
         }
         if(!error){
             let data = JSON.parse(body);
+            console.log(data.list.length);
             for(let i = 0; i < data.list.length; i++){
+                console.log(i);
                 /* Because The API's Response Is Different Depending On The Time Of The Call, 
                 This Loops Finds When The Day After The Current Day Starts
                 */
