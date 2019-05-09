@@ -44,6 +44,7 @@ app.post("/",function(req,res){
                 This Loops Finds When The Day After The Current Day Starts
                 */
                 if(unixTime.convertUnixToAMPM(data.list[i].dt) === '11:00 PM'){
+                    console.log(startIndex);
                     var startIndex = i + 1;
                     break;
                 }
