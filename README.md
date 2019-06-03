@@ -1,19 +1,38 @@
-# Project using OpenWeatherMap's API 
+# Weather Dashboard
+Weather dashboard web application using OpenWeatherMap's 5 day forecast API. (https://openweathermap.org/api)
 
-https://openweathermapforecast.herokuapp.com/ <-- Hosted On Heroku The Stack For This Project Is (Bootstrap, Node.js, Express.js, and EJS) and it uses OpenWeatherMap's 5 day / 3 hour forecast API (https://openweathermap.org/forecast5). After providing a zipcode, the app makes a call to OpenWeatherMap's API for that location and displays it's 4 day weather forecast.
+The user provides a zipcode and is displayed a responsive dashboard for that location's weather for the upcoming week.
 
-## Getting Started
+Heroku Deployment: https://openweathermapforecast.herokuapp.com/
 
-In order to set this up on your own enviornment all you need is to install node.js, and download the dependency modules for the project.
+## Gif Of Usage
 
-```
-Type npm i, to update any dependencies
-```
+<img src = "weather.gif">
 
-After installing node.js and updating dependencies, type, 
+## Installation and Setup Instructions
 
-```
-node app.js
-```
+Clone down this repository. You will need `node` , `npm` and installed globally on your machine.  
 
-This will create a web server with the app hosted on it, on your local port 3000 (or whichever one you specify)
+You will also need to obtain an API key in order to interact with the API. See documentation (https://openweathermap.org/api)
+
+Installation:
+
+`npm i`
+
+To Start Server:
+
+Open A new terminal session and run `node app.js` in the project directory.
+
+To Visit App:
+
+`localhost:3000`
+
+## Reflection
+
+The greatest takeaways I got from building this project were:
+
+- Understanding API calls, and how to make request to an external server
+
+- Understanding JSON format and how to work with and parse it
+
+- Connecting front-end and back-end in order to display server data to the user 
