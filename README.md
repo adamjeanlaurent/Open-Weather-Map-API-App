@@ -29,6 +29,8 @@ To Visit App:
 
 ## Reflection
 
+The stack used here is: Node.js, Javascript, EJS, Bootstrap, HTML, CSS, Express
+
 The greatest takeaways I got from building this project were:
 
 - Understanding API calls, and how to make request to an external server
