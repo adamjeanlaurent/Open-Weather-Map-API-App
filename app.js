@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const zipCodes = require('zipcodes');
 const unixTime = require('./public/unixFunctions.js');
 const app = express();
-const apiKey = process.env.apikey;
+const apiKey = process.env.APIKEY;
 const port = 3000;
 var startIndex = 0;
 
